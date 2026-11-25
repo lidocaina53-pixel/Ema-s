@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/35396059/README.md)
 # EMA'S · Servicio de Barra y Meseros
 
 Página web de EMA'S (Mexicali) con servicios, galería, proceso, testimonios y servicio de fotografía de Israel Franco.
