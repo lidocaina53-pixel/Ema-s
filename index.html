@@ -20,7 +20,7 @@ img { max-width: 100%; }
   --muted: #655C5E;
   --line: #DDD6D3;
   --wine: #7B1E2C;
-  --wine-ink: #FFFFFF;
+  --wine-ink: #FFFFFF; --gold: #C9A24A; --gold-ink: #1C1718;
   --brass: #96762F;
   --band: #1A1213;
   --band-fg: #F3ECE8;
@@ -31,13 +31,13 @@ img { max-width: 100%; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #130E0F; --surface: #1C1516; --fg: #F1EAE6; --muted: #B3A5A1; --line: #3A2E2F;
-    --wine: #C45A6A; --wine-ink: #130E0F; --brass: #C9A35A; --band: #1F1517; --band-fg: #F3ECE8; --band-muted: #B9AAA6;
+    --wine: #C45A6A; --wine-ink: #130E0F; --gold: #D4AF5A; --gold-ink: #130E0F; --brass: #C9A35A; --band: #1F1517; --band-fg: #F3ECE8; --band-muted: #B9AAA6;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #130E0F; --surface: #1C1516; --fg: #F1EAE6; --muted: #B3A5A1; --line: #3A2E2F;
-  --wine: #C45A6A; --wine-ink: #130E0F; --brass: #C9A35A; --band: #1F1517; --band-fg: #F3ECE8; --band-muted: #B9AAA6;
+  --wine: #C45A6A; --wine-ink: #130E0F; --gold: #D4AF5A; --gold-ink: #130E0F; --brass: #C9A35A; --band: #1F1517; --band-fg: #F3ECE8; --band-muted: #B9AAA6;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -62,8 +62,8 @@ section { scroll-margin-top: 72px; }
 
 /* buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 46px; padding: 0 1.6rem; border-radius: 2px; font: 500 0.82rem/1 var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; }
-.btn-primary { background: var(--wine); color: var(--wine-ink); }
-.btn-primary:hover { background: color-mix(in srgb, var(--wine) 85%, var(--fg)); }
+.btn-primary { background: var(--gold); color: var(--gold-ink); }
+.btn-primary:hover { background: color-mix(in srgb, var(--gold) 84%, var(--fg)); }
 .btn-ghost { border-color: var(--line); color: var(--fg); background: transparent; }
 .btn-ghost:hover { border-color: var(--brass); color: var(--brass); }
 .btn-light { background: var(--band-fg); color: var(--band); }
@@ -168,7 +168,7 @@ footer .wrap { display: grid; gap: 1.4rem; }
 .copy { font-size: 0.78rem; color: var(--muted); padding-top: 1.2rem; border-top: 1px solid var(--line); }
 
 /* floating whatsapp */
-.fab { position: fixed; z-index: 55; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); display: inline-flex; align-items: center; gap: 0.55rem; min-height: 50px; padding: 0 1.15rem; border-radius: 999px; background: var(--wine); color: var(--wine-ink); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+.fab { position: fixed; z-index: 55; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); display: inline-flex; align-items: center; gap: 0.55rem; min-height: 50px; padding: 0 1.15rem; border-radius: 999px; background: var(--gold); color: var(--gold-ink); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
 .fab svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
 @media (max-width: 420px) { .fab span { display: none; } .fab { padding: 0; width: 52px; justify-content: center; } }
 
